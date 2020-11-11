@@ -98,9 +98,23 @@ footer {
 
 /*-------------------- Header Styles --------------------*/
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+header-divider {
+  width: 100%;
+  margin: 0;
+}
+
+header nav {
+  width: 60%;
 }
 
 header nav ul {
@@ -108,6 +122,8 @@ header nav ul {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 45%;
+  padding: 15px 0;
 }
 
 /*-------------------- Footer Styles --------------------*/
@@ -116,6 +132,12 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer p {
+  margin: 0;
 }
 
 .footer-content
@@ -148,26 +170,20 @@ footer .content-wrapper {
 /*-------------------- Mobile Styles - Homepage --------------------*/
 
 .content-wrapper {
-  display: flex;
+  width: 90%;
 }
-
-.article
-  {  display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
 
 .hero-area {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .hero-text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  margin: 20px;
+  padding: 30px 0 310px 0;
 }
 
 aside {
@@ -177,25 +193,30 @@ aside {
   flex-flow: row wrap;
 }
 
+.form-description
+.form {
+  padding: 10px 0;
+}
+
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  padding: 20px 0;
+}
+
+.features-items {
+  display: flex;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
-.features-heading {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.features article {
+  width: 53%
 }
 
-.fontawesome-icon
-.features-item-description {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
+.features p {
+  margin: 0;
 }
 
 .reviews {
@@ -205,18 +226,13 @@ aside {
   flex-flow: row wrap;
 }
 
-
-.reviews-heading
-.reviews-paragraph {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.reviews h3 {
+  width: 50%;
 }
 
 /*-------------------- Mobile Styles - About --------------------*/
 
-.mission
-.mission-content {
+.mission {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,12 +255,17 @@ aside {
 
 /*-------------------- Mobile Styles - FAQ --------------------*/
 
-.faq
-.faq-content {
+.faq {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .faq-column1
