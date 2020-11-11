@@ -87,6 +87,174 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*-------------------- Base Header - Footer Styles --------------------*/
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*-------------------- Header Styles --------------------*/
+
+header .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*-------------------- Footer Styles --------------------*/
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social
+.social-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*-------------------- Mobile Styles - Homepage --------------------*/
+
+.content-wrapper {
+  display: flex;
+}
+
+.article
+  {  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fontawesome-icon
+.features-item-description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+.reviews-heading
+.reviews-paragraph {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*-------------------- Mobile Styles - About --------------------*/
+
+.mission
+.mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-column1
+.contact-column2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*-------------------- Mobile Styles - FAQ --------------------*/
+
+.faq
+.faq-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq-column1
+.faq-column2
+.faq-column3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
