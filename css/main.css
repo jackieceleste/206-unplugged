@@ -499,6 +499,50 @@ aside {
    @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
 
+   .content-wrapper {
+     max-width: 960px;
+   }
+
+   /*-------------------- Desktop Styles -  Homepage --------------------*/
+
+   .hero-text h1 {
+     width: 75%;
+   }
+
+   aside .content-wrapper {
+     justify-content: space-around;
+   }
+
+   aside .content-wrapper .form-description,
+   aside .content-wrapper .form {
+     width: 33%;
+   }
+
+   .features h2 {
+     width: 92%;
+   }
+
+   .features article {
+     flex-basis: 200px;
+   }
+
+   .reviews article img,
+   .reviews article .review-text {
+     width: 50%;
+   }
+
+   /*-------------------- Desktop Styles -  About Page --------------------*/
+
+   .mission h2,
+   .contact-section h2 {
+       width: 100%;
+   }
+
+   /*-------------------- Desktop Styles -  FAQ Page --------------------*/
+
+   .faq h2 {
+       width: 100%;
+   }
 
    }
 
