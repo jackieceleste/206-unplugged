@@ -105,7 +105,9 @@ header {
 header .content-wrapper {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   margin: 0;
+  width: 100%;
 }
 
 header-divider {
@@ -132,7 +134,6 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
   margin: 50px 0;
 }
 
@@ -140,14 +141,18 @@ footer p {
   margin: 0;
 }
 
-.footer-content
+.footer-content {
+  flex-direction: column;
+}
+
+.footer-content,
 .contact {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.social
+.social,
 .social-heading {
   display: flex;
   justify-content: center;
@@ -159,12 +164,6 @@ footer p {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 /*-------------------- Mobile Styles - Homepage --------------------*/
@@ -240,17 +239,16 @@ aside {
 }
 
 .contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  margin: 50px 20px;
 }
 
-.contact-column1
-.contact-column2 {
+.contact-section .content-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  align-items: flex-start;
+  width: 90%;
 }
 
 /*-------------------- Mobile Styles - FAQ --------------------*/
@@ -260,20 +258,12 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0 20px;
 }
 
-faq .content-wrapper {
+.faq .content-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.faq-column1
-.faq-column2
-.faq-column3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* ==========================================================================
@@ -359,21 +349,158 @@ faq .content-wrapper {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+   /*Tablet styles here*/
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+   .content-wrapper {
+     max-width: 640px;
+     margin: 100px 0;
+   }
+   /*-------------------- Tablet Styles - Header --------------------*/
+
+   header {
+     max-width: 100%;
+     margin: 30px 0;
+   }
+
+   header a {
+     display: flex;
+     justify-content: flex-start;
+     flex-flow: row wrap;
+     margin: 30px 0;
+   }
+
+   header nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-flow: row wrap;
+     width: 25%;
+   }
+
+   header nav ul {
+     display: flex;
+     justify-content: space-around;
+     flex-flow: row wrap;
+     width: 100px;
+    }
+
+    .header-divider {
+      display: none;
+    }
+
+    /*-------------------- Tablet Styles - Footer --------------------*/
+
+    .footer-content {
+      flex-direction: row;
+    }
+
+    .footer-content .contact,
+    .footer-content .social {
+      width: 220px;
+      padding: 0 45px;
+    }
+
+    footer .copyright{
+      width: 100%;
+    }
+
+    /*-------------------- Tablet Styles - Newsletter Signup --------------------*/
+
+
+    aside .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-description .form {
+      width: 240px;
+      display: flex;
+    }
+
+    .form-description {
+      padding: 0 45px;
+    }
+
+    .form {
+      padding: 0 45px;
+    }
+
+    /*-------------------- Tablet Styles - Features --------------------*/
+
+    .features article {
+      flex-basis: 50%;
+      padding: 0 45px;
+    }
+
+    /*-------------------- Tablet Styles - Reviews --------------------*/
+
+    .reviews article {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+
+    .reviews article img,
+    .reviews article .review-text {
+      display: flex;
+      flex-flow: row wrap;
+      width: 50%;
+    }
+
+    /*-------------------- Tablet Styles - About Page --------------------*/
+
+    .mission-content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     .mission-content p {
+         width: 50%;
+     }
+
+     .contact-section {
+       margin: 96px 60px;
+     }
+
+     .contact-section .content-wrapper {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: space-between;
+     }
+
+    .contact-content {
+        width: 280px;
+    }
+
+    /*-------------------- Tablet Styles - FAQ Page --------------------*/
+
+    .faq .content-wrapper {
+      justify-content: space-between;
+    }
+
+    .faq-content {
+        flex-basis: 40%;
+    }
+
+    .faq h2 {
+        width: 100%;
+    }
+
+   }
+
+   @media only screen and (min-width: 1200px) {
+   /*Desktop styles here*/
+
+
+   }
 
 /* ==========================================================================
    Print styles.
