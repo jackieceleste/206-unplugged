@@ -96,6 +96,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
@@ -114,17 +115,20 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
+  font-weight: normal;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: normal;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3em;
+  font-weight: normal;
 }
 
 p {
@@ -142,6 +146,7 @@ figure {
 
 address {
   font-style: normal;
+  text-align: center;
 }
 
 .content-wrapper {
@@ -158,7 +163,9 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
+
 
 /*-------------------- Header Styles --------------------*/
 
@@ -167,30 +174,33 @@ header {
 }
 
 header .content-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
   margin: 0;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header-divider {
   width: 100%;
-  margin: 0;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  color: #e2e3ed;
 }
 
 header nav {
   width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 45%;
-  padding: 15px 0;
+  width: 100%;
 }
+
 
 /*-------------------- Footer Styles --------------------*/
 
@@ -232,10 +242,6 @@ footer p {
 
 /*-------------------- Mobile Styles - Homepage --------------------*/
 
-.content-wrapper {
-  width: 90%;
-}
-
 .hero-area {
   display: flex;
   justify-content: center;
@@ -254,18 +260,43 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
-.form-description
-.form {
-  padding: 10px 0;
+aside .content-wrapper {
+  margin: 30px 0;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 20px 0;
 }
 
 .features-items {
@@ -275,7 +306,8 @@ aside {
 }
 
 .features article {
-  width: 53%
+  width: 53%;
+  height: 180px;
 }
 
 .features p {
@@ -287,10 +319,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.reviews h3 {
-  width: 50%;
+  background-color: #2a423a;
 }
 
 /*-------------------- Mobile Styles - About --------------------*/
@@ -300,11 +329,17 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  margin: 0 auto;
+}
+
+.mission p {
+  margin: 0 auto;
+  height: 100px;
 }
 
 .contact-section {
-  width: 90%;
-  margin: 50px 20px;
+  background-color: #2a423a;
 }
 
 .contact-section .content-wrapper {
@@ -312,22 +347,32 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 90%;
+  margin: 0 20px;
+}
+
+.contact-content h3 {
+  margin: 0 auto;
+}
+
+.contact-content address {
+  text-align: left;
+  line-height: .5em;
 }
 
 /*-------------------- Mobile Styles - FAQ --------------------*/
 
 .faq {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  padding: 0 20px;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
   display: flex;
   flex-flow: row wrap;
+  margin: 0 auto;
 }
 
 /* ==========================================================================
