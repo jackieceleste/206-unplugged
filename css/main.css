@@ -338,22 +338,24 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-.contact-section .content-wrapper {
+.contact-section {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
-  margin: 0 20px;
+  align-items: center;
 }
 
-.contact-content h3 {
-  margin: 0 auto;
-}
-
-.contact-content address {
+.contact-content {
+  margin-top: 20px;
   text-align: left;
-  line-height: .5em;
 }
+
+.contact-content p, h3 {
+  margin: 0;
+}
+
+
+
 
 /*-------------------- Mobile Styles - FAQ --------------------*/
 
@@ -564,22 +566,19 @@ input[type=button] {
 
      .mission-content p {
          width: 50%;
+         flex-basis: 300px;
+         margin: 0;
      }
 
-     .contact-section .content-wrapper {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-content: space-between;
+     .contact-section .content-wrapper h2 {
+       width: 80%;
+       margin: 0;
      }
 
-    .contact-content {
-        width: 280px;
-    }
-
-    .contact-content address {
-      line-height: 1.4em;
-    }
+    .contact-section address {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;    }
 
     /*-------------------- Tablet Styles - FAQ Page --------------------*/
 
