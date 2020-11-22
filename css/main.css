@@ -137,11 +137,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -170,14 +170,23 @@ footer {
 /*-------------------- Header Styles --------------------*/
 
 header {
-  padding: 15px 0;
+  padding: 15px;
 }
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header-divider {
@@ -199,8 +208,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0 0;
 }
-
 
 /*-------------------- Footer Styles --------------------*/
 
@@ -248,6 +257,8 @@ footer p {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+  background: url('../img/hero-image.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-text {
@@ -293,6 +304,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features-background.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features-items {
@@ -316,6 +329,10 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   background-color: #2a423a;
+}
+
+.reviews figure {
+  margin-bottom: 20px;
 }
 
 /*-------------------- Mobile Styles - About --------------------*/
@@ -468,6 +485,20 @@ input[type=button] {
      max-width: 640px;
      margin: 100px 0;
    }
+
+
+      h1 {
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 2.25em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+
    /*-------------------- Tablet Styles - Header --------------------*/
 
    header {
@@ -478,6 +509,10 @@ input[type=button] {
    header .content-wrapper {
      width: 100%;
      justify-content: space-between;
+   }
+
+   header figure {
+     width: 30%;
    }
 
    header nav {
@@ -494,24 +529,16 @@ input[type=button] {
 
     /*-------------------- Tablet Styles - Footer --------------------*/
 
-    footer .content-wrapper {
-      width: 65%;
-      margin: 100px 0;
-    }
-
     .footer-content {
       display: flex;
+      flex-flow: row wrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
     }
 
-    footer .contact {
-      margin-bottom: 0;
-    }
 
-    footer .copyright{
-      width: 100%;
-    }
+
+
 
     /*-------------------- Tablet Styles - Newsletter Signup --------------------*/
 
@@ -549,11 +576,17 @@ input[type=button] {
       flex-flow: row wrap;
     }
 
-    .reviews article img,
-    .reviews article .review-text {
-      display: flex;
-      flex-flow: row wrap;
+    .reviews h2 {
+      width: 66%;
+    }
+
+    .reviews figure {
       width: 50%;
+    }
+
+    .review-text {
+      width: 45%;
+      margin-left: 15px;
     }
 
     /*-------------------- Tablet Styles - About Page --------------------*/
@@ -603,6 +636,14 @@ input[type=button] {
      max-width: 960px;
    }
 
+   p {
+     font-size: 1.3em;
+   }
+
+   h3 {
+     font-size: 1.875em;
+   }
+
    /*-------------------- Desktop Styles -  Homepage --------------------*/
 
    .hero-text h1 {
@@ -626,10 +667,7 @@ input[type=button] {
      flex-basis: 200px;
    }
 
-   .reviews article img,
-   .reviews article .review-text {
-     width: 50%;
-   }
+
 
    /*-------------------- Desktop Styles -  About Page --------------------*/
 
