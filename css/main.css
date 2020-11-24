@@ -235,18 +235,16 @@ footer p {
   align-items: center;
 }
 
-.social,
-.social-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.social-icons i {
+  font-size: 2em;
+  padding: 0 20px;
 }
 
 /*-------------------- Mobile Styles - Homepage --------------------*/
