@@ -303,9 +303,14 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
   background: url('../img/features-background.jpg') center no-repeat #333;
   background-size: cover;
+}
+
+.features i {
+	font-size: 3.75em;
 }
 
 .features-items {
@@ -315,12 +320,16 @@ input[type=button] {
 }
 
 .features article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   width: 53%;
   height: 180px;
 }
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .reviews {
@@ -581,7 +590,10 @@ input[type=button] {
 
     .features article {
       flex-basis: 50%;
-      padding: 0 45px;
+    }
+
+    .features p {
+      margin: 0 40px;
     }
 
     /*-------------------- Tablet Styles - Reviews --------------------*/
@@ -691,6 +703,16 @@ input[type=button] {
    .features article {
      flex-basis: 200px;
    }
+
+  .features article {
+    flex-basis: 30%;
+    padding: 50px 0;
+  }
+
+
+  .features p {
+    margin: auto;
+  }
 
 
 
