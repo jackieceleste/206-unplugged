@@ -581,6 +581,10 @@ input[type=button] {
       margin-bottom: 10px;
     }
 
+    .copyright {
+      width: 100%;
+    }
+
     /*-------------------- Tablet Styles - Hero Area --------------------*/
 
 
@@ -726,9 +730,6 @@ input[type=button] {
      font-size: 1.875em;
    }
 
-   .copyright {
-     width: 100%;
-   }
    /*-------------------- Desktop Styles -  Homepage --------------------*/
 
    .hero-text {
